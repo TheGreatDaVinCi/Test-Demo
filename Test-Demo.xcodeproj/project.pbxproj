@@ -16,9 +16,7 @@
 		974C23DC25E442A60095A633 /* SignupModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 974C23DB25E442A60095A633 /* SignupModel.swift */; };
 		974C23E025E446AF0095A633 /* SignupVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 974C23DF25E446AF0095A633 /* SignupVM.swift */; };
 		97D4FF8625F007AD002047DA /* Sample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D4FF8525F007AC002047DA /* Sample.swift */; };
-		97D4FF8825F02A58002047DA /* Test_SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D4FF8725F02A58002047DA /* Test_SignupViewController.swift */; };
 		97D4FF8A25F02F71002047DA /* WebServiceHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D4FF8925F02F71002047DA /* WebServiceHandler.swift */; };
-		97D4FF8C25F03367002047DA /* Test_SignupModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D4FF8B25F03367002047DA /* Test_SignupModel.swift */; };
 		97D4FF8E25F0348F002047DA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D4FF8D25F0348F002047DA /* Constants.swift */; };
 /* End PBXBuildFile section */
 
@@ -46,9 +44,7 @@
 		974C23DB25E442A60095A633 /* SignupModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupModel.swift; sourceTree = "<group>"; };
 		974C23DF25E446AF0095A633 /* SignupVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupVM.swift; sourceTree = "<group>"; };
 		97D4FF8525F007AC002047DA /* Sample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample.swift; sourceTree = "<group>"; };
-		97D4FF8725F02A58002047DA /* Test_SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Test_SignupViewController.swift; path = TestClasses/Controller/Test_SignupViewController.swift; sourceTree = "<group>"; };
 		97D4FF8925F02F71002047DA /* WebServiceHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServiceHandler.swift; sourceTree = "<group>"; };
-		97D4FF8B25F03367002047DA /* Test_SignupModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Test_SignupModel.swift; path = TestClasses/VM/Test_SignupModel.swift; sourceTree = "<group>"; };
 		97D4FF8D25F0348F002047DA /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -104,8 +100,6 @@
 		974C23CE25E2CB640095A633 /* Test-DemoTests */ = {
 			isa = PBXGroup;
 			children = (
-				97D4FF8B25F03367002047DA /* Test_SignupModel.swift */,
-				97D4FF8725F02A58002047DA /* Test_SignupViewController.swift */,
 				97D4FF8525F007AC002047DA /* Sample.swift */,
 				974C23D125E2CB640095A633 /* Info.plist */,
 			);
@@ -248,8 +242,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				97D4FF8825F02A58002047DA /* Test_SignupViewController.swift in Sources */,
-				97D4FF8C25F03367002047DA /* Test_SignupModel.swift in Sources */,
 				97D4FF8625F007AD002047DA /* Sample.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
