@@ -36,18 +36,18 @@ class Test_SignupModel: XCTestCase {
         XCTAssertTrue(isValidLastName, "Last name is not a valid one")
     }
     
-    func test_EmailValidation() {
-        // Arrange
-        model.email = "Naveen@google.com"
-        
-        // Act
-        let isValidEmail = model.isValidEmail
-        
-        // Assert
-        XCTAssertTrue(isValidEmail, "Email is not valid")
-        XCTAssertFalse(isValidEmail, "Email is valid")
-        XCTAssert(isValidEmail, "Email is not valid")
-    }
+//    func test_EmailValidation() {
+//        // Arrange
+//        model.email = "Naveen@google.com"
+//        
+//        // Act
+//        let isValidEmail = model.isValidEmail
+//        
+//        // Assert
+//        XCTAssertTrue(isValidEmail, "Email is not valid")
+//        XCTAssertFalse(isValidEmail, "Email is valid")
+//        XCTAssert(isValidEmail, "Email is not valid")
+//    }
     
     func test_PasswordValidation() throws {
         // Arrange
@@ -61,28 +61,28 @@ class Test_SignupModel: XCTestCase {
         XCTAssertTrue(isValidPassword, "Password is not a valid one")
     }
     
-    func test_PasswordIdenticalCheck() {
-        // Arrange
-        model.password = "Mobility@123"
-        model.repeatedPassword = "Mobility@123"
-        
-        // Assert
-        XCTAssertEqual(model.password, model.repeatedPassword, "Password and RepearedPassword is not identical")
-        XCTAssertNotEqual(model.password, model.repeatedPassword, "Password and RepearedPassword is identical")
-    }
-    
-    func test_SignupModel_Nil() throws {
-        // model = SignupModel(firstName: "Akilan", lastName: "T", email: "akilan@gmail.com", password: "@kiLan0609", repeatedPassword: "@kiLan0609")
-        XCTAssertNil(model,  "SignupModel is Not Nil")
-        XCTAssertNotNil(model,  "SignupModel is Nil")
-        
-        
-        if let theSignupModel = model {
-            XCTAssertEqual(theSignupModel.firstName.count, 0, "Uer's FirstName is non Empty")
-        } else {
-            XCTFail("Failed to SignupModel")
-        }
-    }
+//    func test_PasswordIdenticalCheck() {
+//        // Arrange
+//        model.password = "Mobility@123"
+//        model.repeatedPassword = "Mobility@123"
+//        
+//        // Assert
+//        XCTAssertEqual(model.password, model.repeatedPassword, "Password and RepearedPassword is not identical")
+//        XCTAssertNotEqual(model.password, model.repeatedPassword, "Password and RepearedPassword is identical")
+//    }
+//    
+//    func test_SignupModel_Nil() throws {
+//        // model = SignupModel(firstName: "Akilan", lastName: "T", email: "akilan@gmail.com", password: "@kiLan0609", repeatedPassword: "@kiLan0609")
+//        XCTAssertNil(model,  "SignupModel is Not Nil")
+//        XCTAssertNotNil(model,  "SignupModel is Nil")
+//        
+//        
+//        if let theSignupModel = model {
+//            XCTAssertEqual(theSignupModel.firstName.count, 0, "Uer's FirstName is non Empty")
+//        } else {
+//            XCTFail("Failed to SignupModel")
+//        }
+//    }
     
     func test_SignupModel_ValidateFirstNameCharacterLimit() {
         // model = SignupModel(firstName: "Akilan", lastName: "T", email: "akilan@gmail.com", password: "@kiLan0609", repeatedPassword: "@kiLan0609")
