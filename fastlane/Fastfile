@@ -37,7 +37,7 @@ platform :ios do
       export_xcargs: "-allowProvisioningUpdates",
       scheme: "Test-Demo",                         # 替換為您的 scheme 名稱
       output_directory: "./build",                 # IPA 檔案存放位置
-      output_name: "Test-Demo.ipa"                 # 輸出檔名
+      output_name: "Test-Demo.ipa",                # 輸出檔名
       build_path: "./build"                        # 指定構建路徑
     )
   end
