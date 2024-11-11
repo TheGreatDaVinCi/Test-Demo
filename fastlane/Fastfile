@@ -25,7 +25,7 @@ platform :ios do
       output_name: "Test-Demo.ipa",
       export_options: {
         provisioningProfiles: {
-          "com.leyee.Test-Demo" => "YourProvisioningProfileName"
+          "com.leyee.Test-Demo" => "220005d7-ce79-491d-9b9d-cf5fa6c544a3"
         }
       }
     )
