@@ -16,11 +16,11 @@
 default_platform(:ios)
 
 platform :ios do
-  lane :export_ipa do
+  lane :export_ipa_1 do
     gym(
-      export_method: "development", # 使用免費帳號建議選擇 "development"
-      scheme: "Test-Demo", # 替換為您的 scheme 名稱
-      configuration: "Debug", # 免費帳號只能用 Debug 配置
+      export_method: "development",     # 使用免費帳號建議選擇 "development"
+      scheme: "Test-Demo",              # 替換為您的 scheme 名稱
+      configuration: "Debug",           # 免費帳號只能用 Debug 配置
       output_directory: "./build",
       output_name: "Test-Demo.ipa",
       export_options: {
@@ -30,4 +30,15 @@ platform :ios do
       }
     )
   end
+
+  lane :export_ipa_2 do
+    gym(
+      export_method: "development",                # 可以改為 "development" 因為您是免費憑證
+      export_xcargs: "-allowProvisioningUpdates",
+      scheme: "Test-Demo",                         # 替換為您的 scheme 名稱
+      output_directory: "./build",                 # IPA 檔案存放位置
+      output_name: "Test-Demo.ipa"                 # 輸出檔名
+    )
+  end
+
 end
